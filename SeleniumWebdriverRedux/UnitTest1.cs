@@ -21,6 +21,7 @@ namespace SeleniumWebdriverRedux
             // Get the location of the path for the chrome driver dynamically
             var outputDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             return new ChromeDriver(outputDirectory);
+            //TODO: convert this to a factory structure
         }
     }
 }
